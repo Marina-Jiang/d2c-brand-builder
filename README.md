@@ -47,4 +47,4 @@ Once installed, just mention any of these topics and the skill will activate:
 
 ## Built from
 
-This skill was generalized from a professional marketing agency's demo deck for a cross-border plus-size apparel brand entering the US/UK market. The framework has been made category-agnostic and extended with modern SEO/GEO, email retention, and tech stack guidance.
+This skill was adapted from professional marketing agency demo decks for cross-border brands entering international markets. The framework was made category-agnostic and expanded to include modern SEO/GEO, email retention, and tech stack guidance.
