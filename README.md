@@ -1,50 +1,78 @@
-# D2C Brand Builder — Claude Skill
+# D2C Brand Builder
 
-A skill for [Claude](https://claude.ai) that guides Amazon and marketplace sellers through building a Direct-to-Consumer (D2C) e-commerce brand from scratch.
+A Claude skill for Amazon, marketplace, and cross-border sellers who want to build a real Direct-to-Consumer brand instead of relying only on marketplace traffic.
 
-## What it does
+It works like a practical fractional CMO: it diagnoses the seller's current stage, maps the competitive landscape, clarifies positioning, and turns the strategy into a 30/60/90 day launch plan.
 
-This skill acts as a fractional CMO for Amazon sellers entering D2C — walking them step-by-step through:
+## Who This Is For
 
-1. **Brand Positioning** — Competitive landscape mapping, positioning matrix
-2. **Target Audience** — Persona creation, competitor audience analysis
-3. **Marketing Strategy** — Phased brand development (0→0.1→1→100)
-4. **Influencer Marketing** — Macro/Micro/Nano tier framework, quarterly cadence
-5. **Social Media & Content** — Platform strategy, content calendars, cultural localization
-6. **SEO & GEO** — Traditional SEO + AI search (Google AI Overviews, ChatGPT, Perplexity)
-7. **Email & Retention** — Klaviyo flows, loyalty programs
-8. **Storefront Setup** — Shopify, tech stack, conversion optimization
-9. **Scaling & Expansion** — New markets, channel diversification
+Use this skill if you are:
 
-Especially designed for sellers who are **unfamiliar with their target market's language and culture** — all cultural nuances, localization risks, and tool recommendations are surfaced proactively.
+- An Amazon seller preparing to launch an independent Shopify or D2C site
+- A marketplace seller trying to build brand equity outside Amazon, TikTok Shop, Etsy, Walmart, Shopee, or similar platforms
+- A cross-border e-commerce founder entering the US, UK, EU, Canada, Australia, or another unfamiliar market
+- A brand operator who needs help with positioning, influencers, content, paid acquisition, SEO/GEO, retention, or localization
+- A team that knows its product well but does not fully understand the target market's language, culture, creators, or buyer expectations
 
-## File structure
+## What It Helps You Build
 
-```
+The skill guides users through:
+
+1. **D2C Readiness Diagnosis** - stage, gaps, launch blockers, and priority bottleneck
+2. **Competitive Landscape** - competitors, price bands, traffic signals, channel mix, trust signals, and whitespace
+3. **Brand Positioning** - audience, category frame, differentiator, proof, and localized messaging
+4. **Audience Personas** - buyer profiles tied to discovery channels and content angles
+5. **Storefront Foundation** - Shopify/store setup, product page trust, tracking, email, reviews, and operations
+6. **Influencer Strategy** - macro/micro/nano creator roles, test plan, scoring, outreach, and UGC usage
+7. **Content, SEO, and GEO** - social content pillars, organic search, AI search visibility, and localization
+8. **Paid Acquisition** - campaign hypotheses, creative tests, landing pages, metrics, and stop/scale rules
+9. **Retention and Scaling** - email flows, loyalty, UGC flywheel, product expansion, and new market entry
+
+## Example Prompts
+
+Try prompts like:
+
+- "I sell on Amazon and want to launch my own Shopify store. Help me build a D2C plan."
+- "Analyze whether my product is ready for D2C."
+- "Help me create a 30/60/90 day D2C launch roadmap for the US market."
+- "I am a Chinese seller entering the US market. What localization risks should I check?"
+- "Build an influencer marketing test plan for my new e-commerce brand."
+- "Create a competitive positioning map for my category."
+- "Turn my Amazon product into a D2C brand strategy."
+
+## What's New in v1.1
+
+- Clearer trigger description for D2C, Shopify, Amazon-to-brand transition, influencer strategy, localization, and scaling use cases
+- More operator-friendly workflow with diagnosis, decision rules, and progressive deliverables
+- Added 30/60/90 day roadmap orientation
+- Stronger localization guidance for sellers entering unfamiliar markets
+- Better separation between the core skill and reference files, so the skill stays focused while deeper playbooks remain available when needed
+
+## File Structure
+
+```text
 d2c-brand-builder/
-├── SKILL.md                          # Core skill instructions (9-phase framework)
+├── SKILL.md
 └── references/
-    ├── influencer-playbook.md        # Outreach templates, scorecards, contracts
-    ├── tech-stack-guide.md           # Tools by category and budget tier
-    └── market-localization.md        # US, UK, EU, Canada, Australia guides
+    ├── influencer-playbook.md
+    ├── tech-stack-guide.md
+    └── market-localization.md
 ```
 
-## How to install
+## Reference Guides
 
-1. Download `d2c-brand-builder.skill` from the [Releases](../../releases) page
-2. In Claude (desktop app), go to **Skills** and click **Install from file**
-3. Select the `.skill` file
+- `references/influencer-playbook.md` - outreach templates, creator scorecards, compensation models, content briefs, performance tracking, and contract essentials
+- `references/tech-stack-guide.md` - e-commerce tools by category, budget tier, and growth stage
+- `references/market-localization.md` - cultural, e-commerce, advertising, compliance, and copywriting considerations for major target markets
 
-## How to use
+## Installation
 
-Once installed, just mention any of these topics and the skill will activate:
+Download the latest release package and install it in Claude Desktop from the Skills settings.
 
-- "I want to build a D2C brand"
-- "Help me set up a Shopify store"
-- "I'm transitioning from Amazon to my own website"
-- "I need an influencer marketing strategy"
-- "How do I do competitive analysis for my e-commerce launch"
+If you are installing manually, keep `SKILL.md` and the `references/` folder together so the skill can load the deeper guides when needed.
 
-## Built from
+## Why I Built This
 
-This skill was adapted from professional marketing agency demo decks for cross-border brands entering international markets. The framework was made category-agnostic and expanded to include modern SEO/GEO, email retention, and tech stack guidance.
+Many marketplace sellers have strong products but weak owned-brand infrastructure. They often know how to optimize listings, but struggle with positioning, local-market nuance, influencer fit, content strategy, paid acquisition, and retention.
+
+This skill turns that messy transition into a structured D2C brand-building workflow.
